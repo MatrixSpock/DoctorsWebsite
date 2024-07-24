@@ -5980,6 +5980,14 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 
 /* Gallery (transitions) */
 
+/* Ensure images do not exceed the size of their container */
+.gallery .image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 .gallery.onload-fade-in article .image img {
 	-moz-transition: opacity 0.75s ease-in-out;
 	-webkit-transition: opacity 0.75s ease-in-out;
