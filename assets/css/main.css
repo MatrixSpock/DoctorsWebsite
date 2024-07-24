@@ -5980,13 +5980,24 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 
 /* Gallery (transitions) */
 
-/* Ensure images do not exceed the size of their container */
+/* Ensure images in the gallery fill their containers */
+.gallery .image {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio of 16:9 */
+    overflow: hidden;
+}
+
 .gallery .image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
+
 
 .gallery.onload-fade-in article .image img {
 	-moz-transition: opacity 0.75s ease-in-out;
