@@ -2799,6 +2799,20 @@ a.icon.style2:active:before {
 	width: 100%;
 }
 
+
+/* Feature Lists - Additional styles for better formatting */
+.feature-list {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  .feature-list li {
+	margin: 1rem 0;
+	font-size: 1.2rem;
+	text-align: left;
+  }
+
+
 /* List */
 
 ol {
@@ -5978,8 +5992,9 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64px' height='32px' viewBox='0 0 64 32' zoomAndPan='disable'%3E%3Cstyle%3Erect %7Bfill: transparent%3B stroke: white%3B stroke-width: 1px%3B %7D%3C/style%3E%3Crect rx='4' ry='4' x='6' y='4' width='52' height='24' vector-effect='non-scaling-stroke' /%3E%3C/svg%3E");
 }
 
-/* Gallery (transitions) */
 
+
+/* Gallery (transitions) */
 /* Ensure images in the gallery fill their containers */
 .gallery .image {
     position: relative;
@@ -5997,7 +6012,6 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
     height: 100%;
     object-fit: cover;
 }
-
 
 .gallery.onload-fade-in article .image img {
 	-moz-transition: opacity 0.75s ease-in-out;
@@ -7403,7 +7417,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 @media screen and (max-width: 1680px) {
 
 	.wrapper.style1>.inner {
-		padding: 5rem 2.5rem 3rem 2.5rem;
+		padding: 0rem 2.5rem 3rem 2.5rem;
 	}
 
 }
